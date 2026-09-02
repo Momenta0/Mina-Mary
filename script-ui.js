@@ -164,7 +164,7 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
    6. ADD TO CALENDAR
    Generates a standard .ics file and triggers browser download.
    Church button exists on both pages. The reception button only
-   exists in Reception.html, so its listener simply never attaches
+   exists in Venue.html, so its listener simply never attaches
    on index.html (the church-only, general-audience page).
 ──────────────────────────────────────────────────────────────── */
 function downloadICS({ start, end, summary, location, description, filename }) {
