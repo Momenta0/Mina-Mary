@@ -11,15 +11,17 @@
 ──────────────────────────────────────────────────────────────── */
 
 :root {
-  --beige:      #F1E9DE;   /* page background */
-  --warm-white: #FCFAFB;   /* card / section backgrounds */
-  --gold:       #8e495a;  /* accents, ornaments (muted lilac) */
-  --gold-dark:  #8e495a;  /* hover states, required marks */
-  --olive:      #5B3039;   /* headings, footer, primary button (taupe) */
-  --brown:      #7A6B74;   /* unused — available for extras */
-  --text:       #362F35;   /* main body text */
-  --text-light: #857B82;   /* subtitles, labels, descriptions */
-  --border:     #CE8FA0;/* all borders and dividers */
+  --beige:          #F1E9DE;   /* page background */
+  --warm-white:     #FCFAFB;   /* card / section backgrounds */
+  --gold:           #8e495a;  /* accents, ornaments (muted lilac) */
+  --gold-dark:      #8e495a;  /* hover states, required marks */
+  --champagne:      #F2E6B1;   /* pale gold — envelope screen, footer, primary button backgrounds */
+  --champagne-dark: #D9C36A;   /* deeper gold — hover state for champagne backgrounds */
+  --ink:            #5B3039;   /* dark text — headings, venue name/time, countdown, + text on champagne backgrounds */
+  --brown:          #7A6B74;   /* unused — available for extras */
+  --text:           #362F35;   /* main body text */
+  --text-light:     #857B82;   /* subtitles, labels, descriptions */
+  --border:         var(--champagne);/* all borders and dividers */
 }
 
 
@@ -55,14 +57,14 @@ body[dir="rtl"] {
 
 /* ────────────────────────────────────────────────────────────────
    3. ENVELOPE SCREEN
-   Full-screen olive overlay shown on load.
+   Full-screen champagne overlay shown on load.
    .hidden class added by JS after tap → fades out.
 ──────────────────────────────────────────────────────────────── */
 #envelope-screen {
   position: fixed;
   inset: 0;
   z-index: 9999;
-  background: var(--olive);
+  background: var(--champagne);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -166,14 +168,14 @@ body[dir="rtl"] {
   margin-top: 16px;
   font-family: 'Great Vibes', cursive;
   font-size: 32px;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(91, 48, 57, 0.9);
   text-align: center;
 }
 
 /* Pulsing "Tap to open" hint */
 .env-tap {
   margin-top: 12px;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(91, 48, 57, 0.75);
   font-size: 11px;
   letter-spacing: 0.28em;
   text-transform: uppercase;
@@ -208,7 +210,7 @@ body[dir="rtl"] {
   letter-spacing: 0.08em;
   font-weight: 500;
   cursor: pointer;
-  color: var(--olive);
+  color: var(--ink);
   transition: background 0.2s, box-shadow 0.2s;
 }
 
@@ -245,7 +247,7 @@ body[dir="rtl"] #lang-btn {
   border-radius: 50%;
   font-size: 14px;
   cursor: pointer;
-  color: var(--olive);
+  color: var(--ink);
   transition: background 0.2s, box-shadow 0.2s;
 }
 
@@ -332,8 +334,9 @@ body[dir="rtl"] #music-btn {
 .hero-date {
   font-family: 'Playfair Display', serif;
   font-style: italic;
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.85);
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
   margin-top: 20px;
   letter-spacing: 0.1em;
 }
@@ -419,7 +422,7 @@ section {
 .section-title {
   font-family: 'Allura', cursive;
   font-size: clamp(36px, 9vw, 52px);
-  color: var(--olive);
+  color: var(--ink);
   text-align: center;
 }
 
@@ -478,7 +481,7 @@ section {
   font-family: 'Playfair Display', serif;
   font-size: clamp(40px, 11vw, 60px);
   font-weight: 300;
-  color: var(--olive);
+  color: var(--ink);
   line-height: 1;
 }
 
@@ -656,16 +659,16 @@ body[dir="rtl"] .gallery-track {
   font-size: 22px;
   font-weight: 500;
   text-align: center;
-  color: var(--olive);
+  color: var(--ink);
 }
 
 .venue-time {
   text-align: center;
   font-family: 'Playfair Display', serif;
   font-style: italic;
-  font-size: 17px;
-  font-weight: 500;
-  color: var(--olive);
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--ink);
   margin-top: 10px;
   letter-spacing: 0.03em;
 }
@@ -708,7 +711,7 @@ body[dir="rtl"] .venue-time {
   background: transparent;
   font-size: 11px;
   letter-spacing: 0.1em;
-  color: var(--olive);
+  color: var(--ink);
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -754,7 +757,7 @@ body[dir="rtl"] .note-text {
 }
 
 .charge-note .note-text {
-  color: var(--olive);
+  color: var(--ink);
   font-weight: 500;
   font-size: 13px;
 }
@@ -900,8 +903,8 @@ body[dir="rtl"] .attend-btn {
 .btn-primary {
   width: 100%;
   padding: 15px;
-  background: var(--olive);
-  color: #fff;
+  background: var(--champagne);
+  color: var(--ink);
   border: none;
   border-radius: 4px;
   font-size: 13px;
@@ -917,7 +920,7 @@ body[dir="rtl"] .attend-btn {
 }
 
 .btn-primary:hover {
-  background: var(--gold-dark);
+  background: var(--champagne-dark);
 }
 
 body[dir="rtl"] .btn-primary {
@@ -939,7 +942,7 @@ body[dir="rtl"] .btn-primary {
 #rsvp-success h3 {
   font-family: 'Allura', cursive;
   font-size: 38px;
-  color: var(--olive);
+  color: var(--ink);
   margin-bottom: 10px;
 }
 
@@ -954,8 +957,8 @@ body[dir="rtl"] .btn-primary {
    12. FOOTER
 ──────────────────────────────────────────────────────────────── */
 footer {
-  background: var(--olive);
-  color: rgba(255, 255, 255, 0.7);
+  background: var(--champagne);
+  color: rgba(91, 48, 57, 0.7);
   text-align: center;
   padding: 52px 24px;
 }
@@ -963,13 +966,14 @@ footer {
 .footer-names {
   font-family: 'Great Vibes', cursive;
   font-size: 42px;
-  color: #fff;
+  color: var(--ink);
 }
 
 .footer-date {
   font-family: 'Playfair Display', serif;
   font-style: italic;
-  font-size: 13px;
+  font-size: 17px;
+  font-weight: 500;
   letter-spacing: 0.15em;
   margin-top: 8px;
 }
@@ -977,7 +981,7 @@ footer {
 .footer-made {
   font-size: 10px;
   margin-top: 20px;
-  opacity: 0.4;
+  color: var(--ink);
   letter-spacing: 0.1em;
 }
 

@@ -127,7 +127,7 @@ function updateCountdown() {
   if (diff <= 0) {
     const row = document.querySelector('.countdown-row');
     if (row) row.innerHTML =
-      '<p style="text-align:center;font-family:\'Allura\',cursive;font-size:32px;color:var(--olive)">🎉</p>';
+      '<p style="text-align:center;font-family:\'Allura\',cursive;font-size:32px;color:var(--ink)">🎉</p>';
     return;
   }
 
