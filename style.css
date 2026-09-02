@@ -344,8 +344,9 @@ body[dir="rtl"] #music-btn {
 .hero-time {
   font-family: 'Playfair Display', serif;
   font-style: italic;
-  font-size: 15px;
-  color: rgba(255, 255, 255, 0.75);
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.95);
   margin-top: 6px;
   letter-spacing: 0.08em;
 }
@@ -647,7 +648,7 @@ body[dir="rtl"] .gallery-track {
 
 .venue-tag {
   text-align: center;
-  font-size: 10px;
+  font-size: 13px;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--gold-dark);
@@ -708,7 +709,7 @@ body[dir="rtl"] .venue-time {
   padding: 10px 8px;
   border: 1px solid var(--border);
   border-radius: 6px;
-  background: transparent;
+  background: var(--warm-white);
   font-size: 11px;
   letter-spacing: 0.1em;
   color: var(--ink);
@@ -716,11 +717,6 @@ body[dir="rtl"] .venue-time {
   text-align: center;
   text-decoration: none;
   font-family: 'Jost', sans-serif;
-  transition: background 0.2s;
-}
-
-.btn-outline:hover {
-  background: var(--warm-white);
 }
 
 /* Notes (plus-one / minimum charge) */
