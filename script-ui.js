@@ -209,8 +209,8 @@ if (calBtnReception) {
   calBtnReception.addEventListener('click', e => {
     e.preventDefault();
     downloadICS({
-      start: '20260919T200000',
-      end: '20260920T000000',
+      start: '20260919T190000',
+      end: '20260919T230000',
       summary: 'David & Nardine — Wedding Reception',
       location: 'Casa Maria Orabi',
       description: 'Wedding reception of David & Nardine.',
