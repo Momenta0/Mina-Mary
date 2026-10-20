@@ -166,7 +166,7 @@ body[dir="rtl"] {
 /* Names text above tap hint */
 .env-names {
   margin-top: 16px;
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Dancing Script', cursive;
   font-size: 32px;
   color: rgba(91, 48, 57, 0.9);
   text-align: center;
@@ -312,9 +312,9 @@ body[dir="rtl"] #music-btn {
   margin-bottom: 30px;
 }
 
-/* Couple names — Great Vibes for English, falls back to Allura in Arabic (see RTL override below) */
+/* Couple names — Dancing Script for English, falls back to Allura in Arabic (see RTL override below) */
 .hero-name {
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Dancing Script', cursive;
   font-size: clamp(64px, 18vw, 96px);
   color: #fff;
   line-height: 1;
@@ -530,7 +530,7 @@ section {
 
 .love-quote-names {
   margin-top: 28px;
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Dancing Script', cursive;
   font-size: 32px;
   color: var(--gold-dark);
   letter-spacing: 0.04em;
@@ -960,7 +960,7 @@ footer {
 }
 
 .footer-names {
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Dancing Script', cursive;
   font-size: 42px;
   color: var(--ink);
 }
