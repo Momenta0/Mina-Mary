@@ -119,7 +119,7 @@ window.toggleMusic = toggleMusic;
    Counts down to the church ceremony (the first event of the day).
    Updates every second. Shows 🎉 when target date passes.
 ──────────────────────────────────────────────────────────────── */
-const eventDate = new Date('2026-09-19T17:00:00');
+const eventDate = new Date('2026-11-08T15:30:00');
 
 function updateCountdown() {
   const diff = eventDate - new Date();
@@ -194,12 +194,12 @@ if (calBtnChurch) {
   calBtnChurch.addEventListener('click', e => {
     e.preventDefault();
     downloadICS({
-      start: '20260919T170000',
-      end: '20260919T183000',
-      summary: 'David & Nardine — Wedding Ceremony',
+      start: '20261108T153000',
+      end: '20261108T170000',
+      summary: 'Mina & Mary — Wedding Ceremony',
       location: 'Church of Archangel Michael in Sheraton',
-      description: 'Wedding ceremony of David & Nardine.',
-      filename: 'david-nardine-church.ics'
+      description: 'Wedding ceremony of Mina & Mary.',
+      filename: 'mina-mary-church.ics'
     });
   });
 }
@@ -209,12 +209,12 @@ if (calBtnReception) {
   calBtnReception.addEventListener('click', e => {
     e.preventDefault();
     downloadICS({
-      start: '20260919T193000',
-      end: '20260919T233000',
-      summary: 'David & Nardine — Wedding Reception',
-      location: 'Casa Maria Orabi',
-      description: 'Wedding reception of David & Nardine.',
-      filename: 'david-nardine-reception.ics'
+      start: '20261108T180000',
+      end: '20261108T220000',
+      summary: 'Mina & Mary — Wedding Reception',
+      location: 'Le Passage Hotel',
+      description: 'Wedding reception of Mina & Mary.',
+      filename: 'mina-mary-reception.ics'
     });
   });
 }
