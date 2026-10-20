@@ -294,7 +294,7 @@ body[dir="rtl"] #music-btn {
   /* 🔧 Second value (per layer) controls the photo:
      background-position: ... , center Y%  → 0% shows the TOP of the photo, 100% shows the BOTTOM
      background-size:     ... , auto Z%    → raise Z to zoom in more */
-  background-position: center, center 90%;
+  background-position: center, 65% 90%;
   background-size: cover, auto 115%;
 }
 
