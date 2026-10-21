@@ -244,8 +244,10 @@ window.getAttending = () => attending;
    Supports mouse (desktop) and touch (mobile).
    touch-action: none in CSS prevents page scroll while drawing.
    script.js reads the canvas via document.getElementById('sig-canvas').
+   Skipped entirely on pages without the RSVP form (index.html).
 ──────────────────────────────────────────────────────────────── */
 const sigCanvas = document.getElementById('sig-canvas');
+if (sigCanvas) {
 const sigCtx    = sigCanvas.getContext('2d');
 let   sigActive = false;
 
@@ -314,3 +316,4 @@ window.isSigEmpty = function() {
   const pixels = sigCtx.getImageData(0, 0, sigCanvas.width, sigCanvas.height).data;
   return !pixels.some((val, i) => i % 4 === 3 && val > 0);
 };
+} // end if (sigCanvas)

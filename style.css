@@ -674,6 +674,31 @@ body[dir="rtl"] .gallery-track {
   letter-spacing: 0.03em;
 }
 
+/* Kids note (Venue.html only) — moon icon + one gentle line */
+.kids-note {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.kids-note-icon {
+  font-size: 34px;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.kids-note-text {
+  font-family: 'Dancing Script', cursive;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+body[dir="rtl"] .kids-note-text {
+  font-family: 'Tajawal', sans-serif;
+  font-style: normal;
+}
+
 body[dir="rtl"] .venue-time {
   font-family: 'Tajawal', sans-serif;
   font-style: normal;
